@@ -1,0 +1,19 @@
+# Basic Python .gitignore file and used for this git repo
+
+# Caches
+.cache
+
+# Log files
+*.log
+
+# Binaries
+*.bin
+*.bin.gz
+
+# IDE files
+*.iml
+*.xml
+.idea/
+
+# Compiled Python files
+*.pyc
