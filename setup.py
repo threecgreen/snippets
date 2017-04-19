@@ -1,6 +1,12 @@
 """
 Example setup.py implementation where the required packages as defined in requirements.txt are installed when 
 `$ python setup.py install` is run.
+`$ python setup.py develop` to allow changes to code without having to rerun install.
+`$ python setup.py test` to run the test suite to ensure things are working properly.
+
+For pytest to work through `setup.py test`, also create a setup.cfg containing:
+[aliases]
+test=pytest
 """
 from setuptools import setup, find_packages
 from pip.req import parse_requirements
@@ -24,4 +30,7 @@ setup(
     license="MIT License",
     packages=find_packages(exclude=[".cache", ".idea", "doc", "tests"]),
     install_requires=reqs,
+    # For pytest to work correctly
+    setup_requires=["pytest-runner"],
+    tests_require=["pytest"],
 )
