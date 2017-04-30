@@ -7,7 +7,7 @@ import logging
 # Set default logging level: DEBUG, INFO, WARNING, ERROR, CRITICAL
 logging.basicConfig(level=logging.DEBUG,
                     # Optional write logging output to file. If no file, logging will be printed to stdout
-                    filename="schecker.log",
+                    filename="example.log",
                     # a: append (add to the same file), w: write (overwrite every time the program restarts)
                     filemode="a",
                     # Logging formatting with time, name and logging level before message
