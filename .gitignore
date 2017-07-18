@@ -17,3 +17,6 @@
 
 # Compiled Python files
 *.pyc
+
+# Mac file system
+.DS_Store
